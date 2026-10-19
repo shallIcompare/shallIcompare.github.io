@@ -147,3 +147,10 @@ h3 { font-size: 21px; line-height: 1.3; font-weight: 500; }
   .section-head { max-width: none; }
   .portrait { flex-basis: 100%; min-width: 0; max-width: 300px; }
 }
+
+/* Numbered aims and figures inside a section (NIHAI page) */
+.aims { max-width: 680px; margin: 0 0 1em 0; padding-left: 1.4em; }
+.aims li { margin-bottom: 0.5em; padding-left: 0.2em; }
+.figure { margin: 32px 0 0 0; }
+.figure img { display: block; width: 100%; height: auto; }
+.figure figcaption { font-size: 14px; color: var(--ink-3); margin-top: 10px; }
