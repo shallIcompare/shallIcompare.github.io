@@ -1,0 +1,10 @@
+# Private notes and instructions for Claude Code
+CLAUDE.local.md
+_work/
+
+# Netlify-only files from the first draft; GitHub Pages does not use them
+README-HOW-TO-PUBLISH.md
+_redirects
+
+# macOS folder metadata
+.DS_Store
