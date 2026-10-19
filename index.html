@@ -14,15 +14,17 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-<script src="nav.js" defer></script>
+<link rel="stylesheet" href="style.css?v=2026-10-20">
+<script>document.documentElement.classList.add('js');</script>
+<script src="nav.js?v=2026-10-20" defer></script>
 </head>
 <body>
 
 <header class="site-header">
   <div class="wrap">
     <a class="brand" href="index.html">Markus Kneer</a>
-    <nav class="site-nav" aria-label="Site">
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="nav-toggle-bars" aria-hidden="true"></span><span class="visually-hidden">Menu</span></button>
+    <nav class="site-nav" id="site-nav" aria-label="Site">
       <a href="#research">Research</a>
       <details class="nav-menu">
         <summary>Projects</summary>
@@ -42,8 +44,11 @@
 
 <section class="intro">
   <div class="wrap">
+    <h1 class="intro-name">Markus Kneer</h1>
+    <figure class="portrait">
+      <img src="images/portrait.jpg" alt="Markus Kneer" width="600" height="682">
+    </figure>
     <div class="intro-text">
-      <h1>Markus Kneer</h1>
       <p class="degrees">BA, University of Oxford · MA, PhD, École Normale Supérieure, Paris</p>
       <p class="role">Professor of Ethics of Artificial Intelligence, University of Graz<br>Director, Guilty Minds Lab · Research associate, Digital Society Initiative, University of Zurich</p>
       <p class="lede">I work on the ethics of artificial intelligence, at the intersection of philosophy, cognitive science and the law. My research asks how people assign responsibility, blame and trust, to one another and increasingly to machines, and what this means for how AI should be built, regulated and used. I combine philosophical analysis with large-scale experiments.</p>
@@ -54,9 +59,6 @@
         <a href="mailto:markus.kneer@uni-graz.at">markus.kneer@uni-graz.at</a>
       </div>
     </div>
-    <figure class="portrait">
-      <img src="images/portrait.jpg" alt="Markus Kneer" width="600" height="682">
-    </figure>
   </div>
 </section>
 
@@ -173,6 +175,7 @@
       <a href="https://scholar.google.com/citations?user=6dFvixUAAAAJ">Google Scholar</a>
       <a href="https://www.researchgate.net/profile/Markus-Kneer">ResearchGate</a>
       <a href="https://www.linkedin.com/in/markus-kneer-b809306/">LinkedIn</a>
+      <a href="cv.pdf">CV</a>
       <a href="guiltymindslab.html">Guilty Minds Lab</a>
       <a href="nihai.html">NIHAI</a>
     </div>

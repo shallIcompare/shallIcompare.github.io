@@ -9,15 +9,17 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-<script src="nav.js" defer></script>
+<link rel="stylesheet" href="style.css?v=2026-10-20">
+<script>document.documentElement.classList.add('js');</script>
+<script src="nav.js?v=2026-10-20" defer></script>
 </head>
 <body>
 
 <header class="site-header">
   <div class="wrap">
     <a class="brand" href="index.html">Markus Kneer</a>
-    <nav class="site-nav" aria-label="Site">
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="nav-toggle-bars" aria-hidden="true"></span><span class="visually-hidden">Menu</span></button>
+    <nav class="site-nav" id="site-nav" aria-label="Site">
       <a href="index.html#research">Research</a>
       <details class="nav-menu">
         <summary>Projects</summary>
@@ -60,9 +62,9 @@
   <li>Güver, L. &amp; Kneer, M. (2025). <span class="t">Causation, norms, and cognitive bias.</span> <em>Cognition</em> 259, 106105. <a class="doc" href="https://www.sciencedirect.com/science/article/pii/S0010027725000459">Link</a></li>
   <li>Mikalonytė, E. &amp; Kneer, M. (2024). <span class="t">The folk concept of art.</span> <em>Synthese</em> 205 (2), online first. <a class="doc" href="https://link.springer.com/article/10.1007/s11229-024-04812-8">Link</a></li>
   <li>Christen, M. &amp; Kneer, M. (2024). <span class="t">Mensch-Maschine-Kooperation im Sicherheitsbereich: Wer ist verantwortlich?</span> <em>Stratos</em> 24, 67–80. <a class="doc" href="https://www.zora.uzh.ch/id/eprint/267142/1/ChristenKneer_Stratos_2024.pdf">PDF</a></li>
-  <li>Kneer, M. &amp; Christen, M. (2024). <span class="t">Responsibility gaps and retributive dispositions: Evidence from the US, Japan and Germany.</span> <em>Science and Engineering Ethics</em> (forthcoming). <a class="doc" href="https://www.researchgate.net/publication/369375225_Responsibility_Gaps_and_Retributive_Dispositions_Evidence_from_the_US_Japan_and_Germany">Link</a></li>
-  <li>Kneer, M. &amp; Haybron, D. (2024). <span class="t">The folk concept of the good life: Neither happiness nor well-being.</span> <em>Philosophical Studies</em> (online first). <a class="doc" href="https://link.springer.com/article/10.1007/s11098-024-02187-7">Link</a></li>
-  <li>Kneer, M. &amp; Haybron, D. (2024). <span class="t">Happiness and well-being: Is it all in your head? Evidence from the folk.</span> <em>Noûs</em> (online first). <a class="doc" href="https://onlinelibrary.wiley.com/doi/10.1111/nous.12492">Link</a></li>
+  <li>Kneer, M. &amp; Christen, M. (2024). <span class="t">Responsibility gaps and retributive dispositions: Evidence from the US, Japan and Germany.</span> <em>Science and Engineering Ethics</em> 30 (6), 51. <a class="doc" href="https://www.researchgate.net/publication/369375225_Responsibility_Gaps_and_Retributive_Dispositions_Evidence_from_the_US_Japan_and_Germany">Link</a></li>
+  <li>Kneer, M. &amp; Haybron, D. (2024). <span class="t">The folk concept of the good life: Neither happiness nor well-being.</span> <em>Philosophical Studies</em> 181 (10), 2525–2538. <a class="doc" href="https://link.springer.com/article/10.1007/s11098-024-02187-7">Link</a></li>
+  <li>Kneer, M. &amp; Haybron, D. (2024). <span class="t">Happiness and well-being: Is it all in your head? Evidence from the folk.</span> <em>Noûs</em> 59 (1), 234–268. <a class="doc" href="https://onlinelibrary.wiley.com/doi/10.1111/nous.12492">Link</a></li>
   <li>Mikalonytė, E. &amp; Kneer, M. (2023). <span class="t">What is art? The role of intention, beauty, and institutional recognition.</span> <em>Proceedings of the 45th Annual Meeting of the Cognitive Science Society</em>, 1807–1814. <a class="doc" href="https://escholarship.org/content/qt9rk3n8xp/qt9rk3n8xp_noSplash_cf61d274947edf050a731be29f483d8d.pdf">PDF</a></li>
   <li>Kneer, M. &amp; Viehoff, J. (2023). <span class="t">Are there irrelevant utilities? What the folk think (and why this is relevant).</span> <em>Proceedings of the 45th Annual Meeting of the Cognitive Science Society</em>, 3039–3047. <a class="doc" href="https://escholarship.org/content/qt66m3w8x7/qt66m3w8x7.pdf">PDF</a></li>
   <li>Baumgartner, L. &amp; Kneer, M. (2023). <span class="t">What’s the matter with ‘reasonable’?</span> <em>Proceedings of the 45th Annual Meeting of the Cognitive Science Society</em>, 2736–2743. <a class="doc" href="https://escholarship.org/content/qt6h8823bv/qt6h8823bv.pdf">PDF</a></li>
@@ -105,6 +107,7 @@
   <div class="wrap">
     <div class="contact">
       <h2>Contact</h2>
+      <p>For talks, advisory work, research collaborations, or drafts not yet online.</p>
       <p><a class="mail" href="mailto:markus.kneer@uni-graz.at">markus.kneer@uni-graz.at</a></p>
       <p>IDea_Lab, University of Graz, Austria</p>
     </div>
@@ -112,6 +115,7 @@
       <a href="https://scholar.google.com/citations?user=6dFvixUAAAAJ">Google Scholar</a>
       <a href="https://www.researchgate.net/profile/Markus-Kneer">ResearchGate</a>
       <a href="https://www.linkedin.com/in/markus-kneer-b809306/">LinkedIn</a>
+      <a href="cv.pdf">CV</a>
       <a href="guiltymindslab.html">Guilty Minds Lab</a>
       <a href="nihai.html">NIHAI</a>
     </div>

@@ -9,15 +9,17 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-<script src="nav.js" defer></script>
+<link rel="stylesheet" href="style.css?v=2026-10-20">
+<script>document.documentElement.classList.add('js');</script>
+<script src="nav.js?v=2026-10-20" defer></script>
 </head>
 <body>
 
 <header class="site-header">
   <div class="wrap">
     <a class="brand" href="index.html">Markus Kneer</a>
-    <nav class="site-nav" aria-label="Site">
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="nav-toggle-bars" aria-hidden="true"></span><span class="visually-hidden">Menu</span></button>
+    <nav class="site-nav" id="site-nav" aria-label="Site">
       <a href="index.html#research">Research</a>
       <details class="nav-menu">
         <summary aria-current="true">Projects</summary>
@@ -96,6 +98,7 @@
   <div class="wrap">
     <div class="contact">
       <h2>Contact</h2>
+      <p>For talks, advisory work, research collaborations, or drafts not yet online.</p>
       <p><a class="mail" href="mailto:markus.kneer@uni-graz.at">markus.kneer@uni-graz.at</a></p>
       <p>IDea_Lab, University of Graz, Austria</p>
     </div>
@@ -103,8 +106,9 @@
       <a href="https://scholar.google.com/citations?user=6dFvixUAAAAJ">Google Scholar</a>
       <a href="https://www.researchgate.net/profile/Markus-Kneer">ResearchGate</a>
       <a href="https://www.linkedin.com/in/markus-kneer-b809306/">LinkedIn</a>
-      <a href="https://idea-lab.uni-graz.at/en/research/ethics-of-artificial-intelligence/">IDea_Lab: Ethics of AI</a>
-      <a href="index.html">Home</a>
+      <a href="cv.pdf">CV</a>
+      <a href="guiltymindslab.html">Guilty Minds Lab</a>
+      <a href="nihai.html">NIHAI</a>
     </div>
     <div class="colophon">© 2026 Markus Kneer</div>
   </div>
