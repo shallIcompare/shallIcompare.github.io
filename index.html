@@ -15,6 +15,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<script src="nav.js" defer></script>
 </head>
 <body>
 
@@ -23,9 +24,14 @@
     <a class="brand" href="index.html">Markus Kneer</a>
     <nav class="site-nav" aria-label="Site">
       <a href="#research">Research</a>
-      <a href="publications.html">Publications</a>
-      <a href="https://guiltymindslab.com">Guilty Minds Lab</a>
-      <a href="nihai.html">NIHAI</a>
+      <details class="nav-menu">
+        <summary>Projects</summary>
+        <div class="nav-menu-list">
+          <a href="#guilty-minds-lab">Guilty Minds Lab</a>
+          <a href="#nihai">NIHAI</a>
+        </div>
+      </details>
+      <a href="#publications">Publications</a>
       <a href="#talks">Talks &amp; advisory</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -44,7 +50,6 @@
       <div class="intro-links">
         <a href="publications.html">Publications</a>
         <a href="https://scholar.google.com/citations?user=6dFvixUAAAAJ">Google Scholar</a>
-        <a href="cv.pdf">CV</a>
         <a href="mailto:markus.kneer@uni-graz.at">markus.kneer@uni-graz.at</a>
       </div>
     </div>
@@ -95,11 +100,11 @@
     </div>
     <div class="section-body">
       <div class="projects">
-        <div class="project">
-          <h3><a href="https://guiltymindslab.com">Guilty Minds Lab</a></h3>
+        <div class="project" id="guilty-minds-lab">
+          <h3><a href="guiltymindslab.html">Guilty Minds Lab</a></h3>
           <p>The Guilty Minds Lab at the University of Graz brings together philosophers, cognitive scientists and computer scientists working on moral and legal cognition and the ethics of AI. Its research is funded by the Swiss National Science Foundation, HERA/CHANSE and Innosuisse, among others: several million CHF in competitive funding to date.</p>
         </div>
-        <div class="project">
+        <div class="project" id="nihai">
           <h3><a href="nihai.html">NIHAI: Rules for conversations with AI</a></h3>
           <p>A four-country consortium (Graz, Zurich, Bucharest, Kraków; HERA/CHANSE, 2025–2028). It studies what people expect from conversations with AI systems, how they judge systems that violate those expectations, and what principles should govern the design of conversational agents.</p>
         </div>
@@ -166,7 +171,6 @@
     <div class="links">
       <a href="https://scholar.google.com/citations?user=6dFvixUAAAAJ">Google Scholar</a>
       <a href="https://www.researchgate.net/profile/Markus-Kneer">ResearchGate</a>
-      <a href="https://www.linkedin.com/in/REPLACE-WITH-YOUR-HANDLE">LinkedIn</a>
       <a href="https://guiltymindslab.com">Guilty Minds Lab</a>
       <a href="nihai.html">NIHAI</a>
     </div>

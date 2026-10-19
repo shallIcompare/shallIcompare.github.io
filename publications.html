@@ -10,6 +10,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<script src="nav.js" defer></script>
 </head>
 <body>
 
@@ -18,9 +19,14 @@
     <a class="brand" href="index.html">Markus Kneer</a>
     <nav class="site-nav" aria-label="Site">
       <a href="index.html#research">Research</a>
-      <a href="publications.html" aria-current="page">Publications</a>
-      <a href="https://guiltymindslab.com">Guilty Minds Lab</a>
-      <a href="nihai.html">NIHAI</a>
+      <details class="nav-menu">
+        <summary>Projects</summary>
+        <div class="nav-menu-list">
+          <a href="index.html#guilty-minds-lab">Guilty Minds Lab</a>
+          <a href="index.html#nihai">NIHAI</a>
+        </div>
+      </details>
+      <a href="index.html#publications" aria-current="true">Publications</a>
       <a href="index.html#talks">Talks &amp; advisory</a>
       <a href="index.html#contact">Contact</a>
     </nav>
@@ -105,7 +111,6 @@
     <div class="links">
       <a href="https://scholar.google.com/citations?user=6dFvixUAAAAJ">Google Scholar</a>
       <a href="https://www.researchgate.net/profile/Markus-Kneer">ResearchGate</a>
-      <a href="https://www.linkedin.com/in/REPLACE-WITH-YOUR-HANDLE">LinkedIn</a>
       <a href="https://guiltymindslab.com">Guilty Minds Lab</a>
       <a href="nihai.html">NIHAI</a>
     </div>
