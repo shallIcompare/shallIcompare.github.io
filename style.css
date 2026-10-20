@@ -1,5 +1,5 @@
 /* markuskneer.net — site stylesheet
-   One accent colour (teal), white ground, serif headings, sans body. */
+   One accent colour (dark blue), white ground, serif headings, sans body. */
 
 :root {
   --ink: #1f2426;
@@ -8,8 +8,8 @@
   --rule: #e4e8e9;
   --ground: #ffffff;
   --ground-2: #f8f9f9;
-  --accent: #2C686C;
-  --accent-dark: #1d474a;
+  --accent: #1E3A6E;
+  --accent-dark: #142A52;
   --serif: 'Newsreader', 'Iowan Old Style', 'Palatino Linotype', Georgia, serif;
   --sans: 'IBM Plex Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
@@ -206,3 +206,10 @@ h3 { font-size: 21px; line-height: 1.3; font-weight: 500; }
   .intro .role { margin-bottom: 0; }
   .portrait { max-width: 280px; margin: 24px 0 26px 0; }
 }
+
+/* Links inside running text are underlined: the dark blue is close to the text colour */
+.intro .lede a, .section-body p a, .page-title p a, .aims a {
+  text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px;
+  text-decoration-color: rgba(30, 58, 110, 0.35);
+}
+.intro .lede a:hover, .section-body p a:hover, .page-title p a:hover, .aims a:hover { text-decoration-color: currentColor; }
